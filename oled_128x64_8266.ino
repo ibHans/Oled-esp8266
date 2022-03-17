@@ -65,7 +65,7 @@ void initDisplayOled() {
     // Show initial display buffer contents on the screen --
     // the library initializes this with an Adafruit splash screen.
     display.clearDisplay();
-    delay(2000); // Pause for 2 seconds
+    delay(500); // Pause for 2 seconds
     // Clear the buffer
     display.clearDisplay();
     }
@@ -112,12 +112,6 @@ void loop() {
         display.setTextColor(WHITE);
         display.setCursor(0,0);
         display.println(String(result_balance_balance)+ " Duco");
-        display.display();
-
-        display.clearDisplay();
-        display.setTextSize(1); 
-        display.setTextColor(WHITE);
-        display.setCursor(0,0);
         display.println();
         display.println(String(result_balance_username));
         display.println(String(total_miner)+ " worker");
