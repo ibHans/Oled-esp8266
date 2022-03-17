@@ -1,4 +1,4 @@
-# Oled-esp8266
+# Duino Coin Monitor Oled-esp8266
 Duino Coin Monitor OLED Display
 
 Install Library Arduino core for the ESP8266 :
