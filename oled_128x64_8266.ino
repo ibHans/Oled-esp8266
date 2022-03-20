@@ -107,6 +107,13 @@ void loop() {
         avgHashrate = totalHashrate / long(total_miner);
         long run_span = run_in_ms / 1000;
 
+        Serial.println("result_balance_username : " + String(result_balance_username));
+        Serial.println("result_balance_balance : " + String(result_balance_balance));
+        Serial.println("result_balance_stake_amount : " + String(result_balance_stake_amount));
+        Serial.println("totalHashrate : " + String(totalHashrate));
+        Serial.println("avgHashrate H/s : " + String(avgHashrate));
+        Serial.println("total_miner : " + String(total_miner));
+
         display.clearDisplay();
         display.setTextSize(1);
         display.setTextColor(WHITE);
@@ -114,6 +121,7 @@ void loop() {
         display.println(String(result_balance_balance)+ " Duco");
         display.println();
         display.println(String(result_balance_username));
+        display.println(String(result_balance_stake_amount)+ " Duco");
         display.println(String(total_miner)+ " worker");
         display.println(String(totalHashrate/1000)+ " Kh/s");
         display.display();
