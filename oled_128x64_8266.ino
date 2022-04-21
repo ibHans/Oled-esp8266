@@ -14,7 +14,6 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 const char *ssid = "wifissid"; // Change this to your WiFi SSID
 const char *password = "wifipass"; // Change this to your WiFi password
 const String ducoUser = "username"; // Change this to your Duino-Coin username
-const char* MINER_KEY = "None"; // Change the part in brackets to your mining key (if you enabled it in the wallet)
 const String ducoReportJsonUrl = "https://server.duinocoin.com/v2/users/" + ducoUser + "?limit=1";
 const int run_in_ms = 2000;
 float lastAverageHash = 0.0;
